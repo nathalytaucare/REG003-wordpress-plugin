@@ -57,6 +57,20 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      - PMA_ARBITRARY=1
+  phpunit:
+    image: "chriszarate/wordpress-phpunit:6.0.6"
+    volumes:
+      - "./html/wp-content/plugins:/app"
+      - "testsuite:/tmp"
 volumes:
   db_data: {}
+  testsuite: {}
+
 

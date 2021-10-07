@@ -1,6 +1,8 @@
 #html
 /html/*
 !/html/.keep
+!html/wp-content/plugins/plugin-contact
+!html/wp-content/plugins/plugin-contact/plugin-contact.php
 
 #mysql
 /php-playground/*
