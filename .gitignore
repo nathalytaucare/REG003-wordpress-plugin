@@ -1,8 +1,11 @@
 #html
 /html/*
 !/html/.keep
-!html/wp-content/plugins/plugin-contact
-!html/wp-content/plugins/plugin-contact/plugin-contact.php
+!/html/wp-content/
+/html/wp-content/*
+!/html/wp-content/plugins/
+/html/wp-content/plugins/*
+!/html/wp-content/plugins/plugin-contact/
 
 #mysql
 /php-playground/*
